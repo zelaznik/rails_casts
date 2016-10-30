@@ -1,4 +1,7 @@
 Example::Application.routes.draw do
+  resources :posts
+
+
   root to: 'users#index'
 
   get 'signup', to: 'users#new', as: 'signup'
